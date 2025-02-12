@@ -1,0 +1,20 @@
+# dependencies
+node_modules
+
+# misc
+.vscode/
+.DS_Store
+*.pem
+
+# debug
+yarn-debug.log*
+yarn-error.log*
+*.tsbuildinfo
+
+# local env files
+.env*
+
+# build
+dist
+storybook-static
+

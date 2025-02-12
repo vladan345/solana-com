@@ -1,7 +1,3 @@
-/**
- * @type {import('next').NextConfig}
- **/
-
 import withBundleAnalyzer from "@next/bundle-analyzer";
 import rewritesAndRedirectsJson from "./rewrites-redirects.mjs";
 import { builder } from "@builder.io/sdk";
@@ -36,9 +32,13 @@ if (process.env.NEXT_PUBLIC_VERCEL_ENV === "preview") {
   });
 }
 
+/**
+ * @type {import('next').NextConfig}
+ **/
 const nextConfig = {
   reactStrictMode: true,
   productionBrowserSourceMaps: true,
+  transpilePackages: ["@solana-foundation/solana-lib"],
 
   async rewrites() {
     return rewritesAndRedirectsJson.rewrites;

@@ -1,0 +1,28 @@
+export const gradients = {
+  'gradient-primary': 'linear-gradient(225deg, #14F195 16.12%, #64A8F2 49.58%, #9945FF 83.36%)',
+  'gradient-two': 'linear-gradient(90deg, #14F195 0%, #80ECFF 40.1%, #64A8F2 82.29%, #64A8F2 100%)',
+  'gradient-three': 'linear-gradient(89.77deg, #00FFDB 0.17%, #64A8F2 50.54%, #9945FF 99.77%)',
+  'gradient-four': 'linear-gradient(90deg, #64A8F2 0%, #9945FF 50.57%, #EB54BC 100%)',
+  'gradient-five': 'linear-gradient(89.86deg, #9945FF 0.1%, #EB54BC 50.55%, #FF754A 99.86%)',
+  'gradient-button': 'linear-gradient(90deg, #C766EF 0%, #7928D2 51.04%, #2B0C52 100%)',
+  'gradient-green': 'linear-gradient(180deg, #56F5B3 0%, rgba(86, 245, 179, 0) 100%)',
+  'gradient-mono-purple': 'linear-gradient(100.51deg, #F087FF 27.61%, #6E1FCE 62.14%, rgba(110, 31, 206, 0.1) 113.78%)',
+  'gradient-mono-blue': 'linear-gradient(100.22deg, #1FCFF1 30.11%, #234CB6 66.43%, rgba(35, 76, 182, 0.1) 120.76%)',
+  'gradient-mono-green': 'linear-gradient(97.65deg, #19FB9B 11.36%, #199890 54.3%, #005F59 100.78%)',
+  'gradient-mono-pink': 'linear-gradient(100.51deg, #EB54BB 27.61%, #C9009B 62.14%, rgba(201, 0, 155, 0) 113.78%)',
+  'gradient-radial-purple':
+    'radial-gradient(54.87% 27.38% at 50.00% 100.00%, rgba(173, 94, 255, 0.50) 0%, rgba(27, 22, 34, 0.50) 100%)',
+  'gradient-black-pink': 'linear-gradient(349deg, #EB54BB 0%, rgba(235, 84, 187, 0.00), #121212 100%)',
+  'gradient-black-purple': 'linear-gradient(349deg, #C5A5F9 0%, rgba(197, 165, 249, 0.00), #121212 100%)',
+  'gradient-black-blue': 'linear-gradient(349deg, #9DCCF8 0%, rgba(157, 204, 248, 0.00), #121212 100%)',
+  'gradient-black-green': 'linear-gradient(349deg, #14F195 0%, rgba(20, 241, 149, 0.00), #121212 100%)',
+  'gradient-black-pink-hover': 'linear-gradient(350deg, #EB54BB 0%, rgba(235, 84, 187, 0.00) 100%)',
+  'gradient-black-purple-hover': 'linear-gradient(350deg, #C5A5F9 0%, rgba(197, 165, 249, 0.00) 100%)',
+  'gradient-black-blue-hover': 'linear-gradient(350deg, #9DCCF8 0%, rgba(157, 204, 248, 0.00) 100%)',
+  'gradient-black-green-hover': 'linear-gradient(350deg, #14F195 0%, rgba(20, 241, 149, 0.00) 100%)',
+  'gradient-black-card': 'linear-gradient(360deg, #121212 0%, rgba(0, 0, 0, 0.00) 100%);',
+  'gradient-scroll': 'linear-gradient(270deg, #121212 0%, rgba(0, 0, 0, 0.00) 100%)',
+  'gradient-black':
+    'linear-gradient(213deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.05) 49.48%, rgba(255, 255, 255, 0.03) 100%)',
+  'gradient-announcement-bar': 'linear-gradient(270deg, #ab66ff 0%, #14f195 101.39%)',
+};

@@ -43,6 +43,11 @@ coverage
 .env.local
 .source
 
-# yalc
-.yalc
-yalc.lock
+# Yarn
+**/.yarn/*
+!.yarn/patches
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*

@@ -1,0 +1,11 @@
+{
+  "extends": "@solana-foundation/typescript-config/react-library.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@solana-foundation/solana-lib/*": ["./src/*"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}

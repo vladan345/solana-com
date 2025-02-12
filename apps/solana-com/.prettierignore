@@ -1,0 +1,7 @@
+.github/*.md
+public
+packages
+.vercel
+.next
+.source
+coverage

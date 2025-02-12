@@ -1,0 +1,111 @@
+.hero {
+  text-align: center;
+  position: relative;
+  width: 100%;
+  min-height: 550px;
+  text-wrap: balance;
+
+  @media (min-width: 768px) {
+    min-height: 750px;
+  }
+
+  &__container {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    width: 100%;
+    padding: 0 20px;
+  }
+
+  &__copy-container {
+    display: none;
+    position: absolute;
+    bottom: -50px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    width: 100%;
+    padding: 0 10px;  
+
+    // 991px matches the Builder desktop breakpoint
+    @media (min-width: 991px) {
+      display: block;
+      bottom: 40px;
+    }
+  }
+
+  &__title,
+  &__subtitle {
+    font-size: 25px;
+    line-height: 32px;
+  }
+
+  &__title + &__subtitle {
+    margin-top: -0.5rem;
+  }
+
+  &__subtitle {
+    font-weight: 300;
+  }
+  &__img {
+    position: absolute;
+    z-index: 2;
+    object-fit: cover;
+    left: 50% !important;
+    transform: translateX(-50%);
+    @media (max-width: 1200px) {
+      width: auto !important;
+    }
+
+    @media (min-width: 1500px) {
+      object-fit: contain;
+    }
+  }
+
+  &__timeline {
+    margin: 1rem 0 0 0;
+    font-size: 1.1rem;
+
+    span {
+      background: #fff;
+      color: #111;
+      font-size: 0.85em;
+      padding: 3px 12px;
+      margin-right: 0.25rem;
+      border-radius: 20px 2px;
+    }
+
+    @media (min-width: 992px) {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+    }
+  }
+
+  &__copy {
+    font-family: 'DSemi', monotype;
+
+    @media all and (min-width: 1024px) {
+      width: 100%;
+      margin: 0 auto;
+    }
+
+    * {
+      font-size: 1.1rem !important;
+    }
+  }
+
+  // Work around to affect styling `.tw-html_parser` so there are no gaps or margins between text
+  :global {
+    .tw-html_parser {
+      gap: 0;
+
+      p {
+        margin-bottom: 0;
+      }
+    }
+  }
+}

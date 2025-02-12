@@ -1,0 +1,40 @@
+.speakers-card {
+    &__headshot-wrapper {
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            aspect-ratio: 1/1;
+            background-image: conic-gradient(
+              from 90deg at 50% 50%,
+              rgba(185, 128, 255, 0.794026) -37.14deg,
+              #c28fff 0.73deg,
+              #64a8f2 23.94deg,
+              #14f195 47.53deg,
+              rgba(0, 129, 76, 0) 99.9deg,
+              rgba(115, 0, 255, 0) 233.26deg,
+              rgba(185, 128, 255, 0.794026) 322.86deg,
+              #c28fff 360.73deg
+            );
+            border-radius: 100%;
+            transform-origin: center;
+            scale: 1.01;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            right: -55px;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+            background-image: url("./outer-glow.png");
+        }
+    }
+}
