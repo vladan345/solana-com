@@ -3,6 +3,8 @@ import Link from "../shared/Link";
 import { useTranslation } from "next-i18next";
 import SolanaLogo from "../../../public/src/img/logos-solana/logotype.inline.svg";
 import { AccelerateButton } from "./AccelerateButton";
+import styles from "./AccelerateHeader.module.scss";
+import classNames from "classnames";
 
 const Header = () => {
   const { t } = useTranslation();
@@ -15,7 +17,7 @@ const Header = () => {
       id="navbar"
       expand="lg"
       variant=""
-      className="navbar-dark"
+      className={classNames("navbar-dark", styles["accelerate-navbar"])}
       style={{ zIndex: 1020 }}
     >
       <div className="container-xl">
