@@ -1,6 +1,6 @@
 import classNames from "classnames";
 import { FC, ReactNode } from "react";
-import styles from "./AccelerateButton.module.scss";
+import styles from "./AccelerateNavButton.module.scss";
 
 export const AccelerateButton: FC<{
   children: ReactNode;

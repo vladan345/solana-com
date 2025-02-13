@@ -2,7 +2,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Link from "../shared/Link";
 import { useTranslation } from "next-i18next";
 import SolanaLogo from "../../../public/src/img/logos-solana/logotype.inline.svg";
-import { AccelerateButton } from "./AccelerateButton";
+import { AccelerateButton } from "./AccelerateNavButton";
 import styles from "./AccelerateHeader.module.scss";
 import classNames from "classnames";
 
