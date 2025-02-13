@@ -1,3 +1,4 @@
+// @ts-check
 import {
   BuilderAPIs,
   getEndpointsForBuilderAPI,
@@ -1757,6 +1758,66 @@ export const AccelerateCardConfig = {
       localized: true,
     },
     { name: "buttons", type: "list", subFields: ButtonConfig.inputs },
+  ],
+};
+
+/**
+ * @type {import('@builder.io/react').RegisteredComponent}
+ */
+export const AccelerateApplyButtonConfig = {
+  name: "Accelerate Apply Button",
+  noWrap: true,
+  inputs: [
+    {
+      name: "label",
+      type: "string",
+      defaultValue: "Apply here",
+      localized: true,
+      required: true,
+    },
+    { name: "url", type: "url", required: true },
+  ],
+};
+
+/**
+ * @type {import('@builder.io/react').RegisteredComponent}
+ */
+export const AccelerateInfoItemConfig = {
+  name: "Info Item",
+  noWrap: true,
+  inputs: [
+    { name: "term", type: "string", localized: true, required: true },
+    { name: "value", type: "string", localized: true, required: true },
+    { name: "subtitle", type: "string", localized: true },
+    { name: "padSubtitle", type: "boolean", defaultValue: false },
+  ],
+};
+
+/**
+ * @type {import('@builder.io/react').RegisteredComponent}
+ */
+export const AccelerateInfoSectionConfig = {
+  name: "Info Section",
+  canHaveChildren: true,
+  inputs: [
+    { name: "label", type: "string", localized: true, required: true },
+    { name: "subtitle", type: "string", localized: true, required: true },
+    { name: "url", type: "url", required: true },
+    {
+      name: "variant",
+      type: "string",
+      enum: ["ship", "scale"],
+      required: true,
+    },
+  ],
+};
+
+export const AccelerateAttendanceConfig = {
+  name: "Attendance",
+  inputs: [
+    { name: "label", type: "string", localized: true, required: true },
+    { name: "note", type: "string", localized: true, required: true },
+    { name: "subnote", type: "string", localized: true },
   ],
 };
 
